@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Roboto&display=swap");
+
+$text-color: #d9d9d9;
+$background-color: #0a0a0a;
+
+@mixin font-primary {
+  font-family: "Geo", sans-serif;
+}
+
+@mixin heading {
+  @include font-primary;
+  text-align: center;
+  font-size: 12rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+
+@mixin subheading {
+  @include font-primary;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

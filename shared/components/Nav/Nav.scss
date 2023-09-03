@@ -1,0 +1,33 @@
+@import "@styles/theme.scss";
+
+nav {
+  @include font-primary;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    font-size: 18px;
+
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 1rem 6rem;
+      a {
+        text-decoration: none;
+        color: $text-color;
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
