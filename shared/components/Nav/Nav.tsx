@@ -1,24 +1,25 @@
 import React from "react";
 import "./Nav.scss";
+import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className="text-red-400">
       <ul>
-        <li>
-          <a href="#">About Me</a>
+        <li className="mx-10">
+          <Link href="#">About Me</Link>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <Link href="#">Projects</Link>
         </li>
         <li>
-          <a href="#">Freelance</a>
+          <Link href="#">Freelance</Link>
         </li>
         <li>
-          <a href="#">Contact Me</a>
+          <Link href="#">Contact Me</Link>
         </li>
         <li>
-          <a href="#">Download CV</a>
+          <Link href="#">Download CV</Link>
         </li>
       </ul>
     </nav>

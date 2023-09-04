@@ -6,29 +6,24 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  height:100%;
   color: $text-color;
+  margin:0;
 
   &::before {
     content: "";
     position: absolute;
     z-index: -10;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     background-image: url("https://ik.imagekit.io/geeekg65rf/bg-home.jpg?updatedAt=1693681799093");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: grayscale(100%) brightness(.1) contrast(100%) saturate(0);
-
+    filter: grayscale(100%) brightness(0.1) contrast(100%) saturate(0);
   }
 }
 
-h1 {
-  @include heading;
-}
-
-h2 {
-  @include subheading;
-}

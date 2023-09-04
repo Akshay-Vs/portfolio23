@@ -1,13 +1,16 @@
 import React from "react";
 import Nav from "@components/Nav";
+import Projects from "@/shared/components/Projects";
+
 import "./Home.scss";
+import Hero from "@/shared/components/Hero";
 const Home = () => {
   return (
     <>
       <Nav />
-      <main>
-        <h1 className="m-10">He!!o Wor!d</h1>
-        <h2 className="sub">This is Akshay Vs</h2>
+      <main className="w-screen">
+        <Hero />
+        <Projects />
       </main>
     </>
   );

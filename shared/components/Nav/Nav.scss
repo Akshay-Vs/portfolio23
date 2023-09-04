@@ -3,7 +3,6 @@
 nav {
   @include font-primary;
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-items: center;
 
@@ -17,7 +16,7 @@ nav {
     padding: 0;
 
     li {
-      margin: 1rem 6rem;
+      margin: 10px 100px;
       a {
         text-decoration: none;
         color: $text-color;
@@ -26,6 +25,7 @@ nav {
 
         &:hover {
           opacity: 0.5;
+          transition: 200ms;
         }
       }
     }

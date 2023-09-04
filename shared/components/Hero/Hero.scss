@@ -1,0 +1,12 @@
+@import "@styles/theme.scss";
+
+.hero {
+  height:100vh;
+    h1 {
+      @include heading;
+    }
+  
+    h2 {
+      @include subheading;
+    }
+  }
