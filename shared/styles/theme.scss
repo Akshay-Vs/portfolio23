@@ -9,11 +9,16 @@ $background-color: #0a0a0a;
 
 @mixin heading {
   @include font-primary;
+  letter-spacing: 1.08px;
   text-align: center;
   font-size: 12rem;
   font-style: normal;
   font-weight: 500;
-  letter-spacing: -4px;
+}
+
+@mixin medheading {
+  @include heading;
+  font-size: 6rem;
 }
 
 @mixin subheading {
@@ -22,7 +27,17 @@ $background-color: #0a0a0a;
   font-size: 3rem;
   font-style: normal;
   font-weight: 500;
-  letter-spacing: -1.2px;
+  letter-spacing: 1.08px;
+
+}
+
+@mixin paragraph {
+  @include subheading;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px; /* 116.667% */
+  letter-spacing: 1.08px;
 }
 
 @mixin center {

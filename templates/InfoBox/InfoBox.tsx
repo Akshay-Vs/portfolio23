@@ -2,26 +2,21 @@ import React from "react";
 import "./InfoBox.scss";
 import Image from "next/image";
 
-const InfoBox = () => {
+interface Props {
+  heading: string;
+  description: string;
+  image: string;
+}
+
+const InfoBox = ({ heading, description, image }: Props) => {
   return (
-    <section className="h-screen ifo-box">
+    <section className="h-screen info-box">
       <div className="left">
-        <div>Lorem, ipsum dolor</div>
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Illum, amet!
-        </div>
+        <h1>{heading}</h1>
+        <h2>{description}</h2>
       </div>
       <div className="right">
-        {/* <Image
-          src={
-            "https://images.pexels.com/photos/5483063/pexels-photo-5483063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          }
-          width={700}
-          height={700}
-          alt="Pic"
-        /> */}
+        <Image src={image} width={1024} height={720} alt="Pic" />
       </div>
     </section>
   );
