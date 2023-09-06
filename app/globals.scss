@@ -3,11 +3,26 @@
 @tailwind utilities;
 
 html {
-    font-size: 16px;
-  }
+  font-size: 16px;
+}
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   max-width: 100vw;
   background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #646464;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
